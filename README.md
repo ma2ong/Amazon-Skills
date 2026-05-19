@@ -2,17 +2,14 @@
 
 <div align="center">
 
-# Amazon Skills by Nexscope
+# Amazon Skills
 
-**51 free AI agent skills built for Amazon sellers — keyword research, listing optimization, FBA calculations, PPC campaigns & more.**
+**51 free AI agent skills for Amazon sellers — keyword research, listing optimization, FBA calculations, PPC campaigns & more.**
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-[![GitHub stars](https://img.shields.io/github/stars/nexscope-ai/Amazon-Skills?style=social)](https://github.com/nexscope-ai/Amazon-Skills)
+[![GitHub stars](https://img.shields.io/github/stars/ma2ong/Amazon-Skills?style=social)](https://github.com/ma2ong/Amazon-Skills)
 ![Skill Count](https://img.shields.io/badge/skills-51-10b981?style=flat)
-![Downloads](https://img.shields.io/badge/downloads-12K+-orange?style=flat)
-[![Discord](https://img.shields.io/badge/Discord-Join%20us-5865F2?logo=discord&logoColor=white)](https://discord.com/invite/t7dfcMTmkH)
 
-Works with **OpenClaw** · **Claude Code** · **Cursor** · **Windsurf** · **Codex** · any [Skills](https://www.nexscope.ai/skillhub?co-from=github)-compatible agent
+Works with **Claude Code** · **Cursor** · **Windsurf** · **Codex** · any Skills-compatible agent
 
 </div>
 
@@ -23,19 +20,19 @@ Works with **OpenClaw** · **Claude Code** · **Cursor** · **Windsurf** · **Co
 Install all 51 skills at once:
 
 ```bash
-npx skills add nexscope-ai/Amazon-Skills -g
+npx skills add ma2ong/Amazon-Skills -g
 ```
 
 Or install a specific skill:
 
 ```bash
-npx skills add nexscope-ai/Amazon-Skills --skill <skill-name> -g
+npx skills add ma2ong/Amazon-Skills --skill <skill-name> -g
 ```
 
-Example — install the keyword research skill:
+Example — install the product research skill:
 
 ```bash
-npx skills add nexscope-ai/Amazon-Skills --skill amazon-keyword-research -g
+npx skills add ma2ong/Amazon-Skills --skill amazon-product-research -g
 ```
 
 Then just ask your AI assistant naturally:
@@ -52,27 +49,25 @@ Install a skill, ask your AI assistant a question about your Amazon business, an
 
 ---
 
-## ⭐ Most Popular
+## ⭐ Highlights
 
-🔍 **[Amazon Keyword Research](https://www.nexscope.ai/skillhub/skill/amazon-keyword-research?co-from=github)**
-Long-tail keyword mining from Amazon autocomplete — competition analysis, seasonality trends, opportunity scoring across 12 marketplaces.
+🔍 **[Amazon Product Research](./amazon-product-research)**
+Live Amazon scraping via Playwright — no paid API required. Competition scoring, BSR-based sales estimation, Keepa price history, review sentiment, and GO/NO-GO verdict with full Markdown report.
 
-📝 **[Listing Optimization](https://www.nexscope.ai/skillhub/skill/amazon-listing-optimization?co-from=github)**
+📝 **[Listing Optimization](./amazon-listing-optimization)**
 Create keyword-optimized listings from scratch or audit existing ones with competitor ASIN analysis and 8-dimension scoring.
 
-💰 **[FBA Calculator](https://www.nexscope.ai/skillhub/skill/amazon-fba-calculator?co-from=github)**
+💰 **[FBA Calculator](./amazon-fba-calculator)**
 Complete FBA fee breakdown — referral fees, fulfillment fees, storage costs, net margin analysis.
 
-📢 **[PPC Campaign Builder](https://www.nexscope.ai/skillhub/skill/amazon-ppc-campaign?co-from=github)**
+📢 **[PPC Campaign Builder](./amazon-ppc-campaign)**
 Build PPC campaign structures, calculate ACoS targets, group keywords, and set bid strategies.
 
-📊 **[Sales Estimator](https://www.nexscope.ai/skillhub/skill/amazon-sales-estimator?co-from=github)**
+📊 **[Sales Estimator](./amazon-sales-estimator)**
 Estimate monthly sales from BSR, ASIN, or keyword — works across any Amazon category.
 
-🌍 **[Tariff Calculator](https://www.nexscope.ai/skillhub/skill/tariff-calculator-amazon?co-from=github)**
+🌍 **[Tariff Calculator](./tariff-calculator-amazon)**
 Import duties, landed costs, VAT/GST calculation for any international trade route.
-
-> **🛒 Need multi-platform tools?** See [eCommerce Skills](https://github.com/nexscope-ai/eCommerce-Skills) — 142 skills for Amazon, Shopify, eBay, Etsy, TikTok Shop & Walmart.
 
 ---
 
@@ -128,8 +123,8 @@ Import duties, landed costs, VAT/GST calculation for any international trade rou
 | Skill | Description | Status |
 |-------|-------------|--------|
 | [amazon-keyword-research](./amazon-keyword-research) | Long-tail keyword mining from Amazon autocomplete, competition analysis, seasonality trends, and market opportunity scoring. 12 marketplaces. | ✅ Available |
+| [amazon-product-research](./amazon-product-research) | Free Playwright-based research pipeline. Scrapes live Amazon data, estimates monthly sales via BSR power-law model, scores competition + opportunity, captures Keepa price history, and outputs a GO/NO-GO Markdown report. No paid API required. | ✅ Available |
 | [amazon-trending-products](./amazon-trending-products) | Trending products and rising categories — BSR patterns, seasonal trends, emerging niches. | 🔶 Beta |
-| [amazon-product-research](./amazon-product-research) | Product research and opportunity analysis — demand, competition, profit potential, entry barriers. | 🔶 Beta |
 | [amazon-niche-finder](./amazon-niche-finder) | Profitable niche discovery — demand, competition, margins, growth potential scoring. | 🔶 Beta |
 | [amazon-seller-analytics](./amazon-seller-analytics) | Seller storefront analysis — revenue estimation, product portfolio, growth trajectory. | 🔶 Beta |
 
@@ -166,33 +161,6 @@ Import duties, landed costs, VAT/GST calculation for any international trade rou
 
 ---
 
-## Why Free?
-
-These skills use publicly available data and proven Amazon selling frameworks — no API key, no paid subscription, no setup friction. Install and go.
-
-These skills give your AI agent Amazon expertise — but skills alone can't access live marketplace data.
-
-**[Nexscope](https://www.nexscope.ai/?co-from=github)** is an AI-powered e-commerce agent that connects to real-time data sources like Jungle Scout, Google Trends, and marketplace APIs. Just describe what you need in natural language — product research, competitor tracking, keyword analysis — and Nexscope pulls live data, runs the analysis, and gives you actionable results. No dashboards to learn, no reports to build.
-
----
-
-## Related
-
-- **[eCommerce Skills](https://github.com/nexscope-ai/eCommerce-Skills)** — 142 multi-platform skills for Amazon, Shopify, eBay, Etsy, TikTok Shop & Walmart
-- **[Nexscope](https://www.nexscope.ai/?co-from=github)** — AI-powered e-commerce agent for Amazon, Shopify, TikTok Shop sellers
-
----
-
 ## License
 
 MIT
-
----
-
-<div align="center">
-
-Built by **[Nexscope](https://www.nexscope.ai/?co-from=github)** — AI-powered e-commerce tools for sellers worldwide.
-
-⭐ Star this repo to help other sellers discover these tools.
-
-</div>
